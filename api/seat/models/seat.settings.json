@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seats",
+  "info": {
+    "name": "seat",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seatNumber": {
+      "type": "integer"
+    },
+    "auditorium": {
+      "model": "auditorium"
+    }
+  }
+}

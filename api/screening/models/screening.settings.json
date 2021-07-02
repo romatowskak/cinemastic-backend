@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "screenings",
+  "info": {
+    "name": "Screening",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "movie": {
+      "model": "movie"
+    },
+    "auditorium": {
+      "model": "auditorium"
+    },
+    "day": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    }
+  }
+}

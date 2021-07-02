@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ratings",
+  "info": {
+    "name": "rating",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "integer"
+    },
+    "user": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "movie": {
+      "model": "movie"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/auditoriums",
+      "handler": "auditorium.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/auditoriums/count",
+      "handler": "auditorium.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/auditoriums/:id",
+      "handler": "auditorium.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/auditoriums",
+      "handler": "auditorium.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/auditoriums/:id",
+      "handler": "auditorium.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/auditoriums/:id",
+      "handler": "auditorium.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

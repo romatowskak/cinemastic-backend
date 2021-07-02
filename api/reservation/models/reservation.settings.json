@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "name": "Reservation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "screening": {
+      "model": "screening"
+    },
+    "seat": {
+      "model": "seat"
+    },
+    "movie": {
+      "model": "movie"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actors",
+  "info": {
+    "name": "actor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "movieName": {
+      "type": "string"
+    },
+    "realName": {
+      "type": "string"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "movie": {
+      "via": "actors",
+      "model": "movie"
+    }
+  }
+}

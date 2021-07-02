@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "name": "Movie",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "genre": {
+      "type": "string"
+    },
+    "production": {
+      "type": "string"
+    },
+    "director": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "decimal"
+    },
+    "adult": {
+      "type": "boolean"
+    },
+    "originalLanguage": {
+      "type": "string"
+    },
+    "subtitles": {
+      "type": "string"
+    },
+    "releaseDate": {
+      "type": "string"
+    },
+    "overview": {
+      "type": "text"
+    },
+    "coverPhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "trailer": {
+      "type": "string"
+    },
+    "ratings": {
+      "collection": "rating"
+    },
+    "actors": {
+      "via": "movie",
+      "collection": "actor"
+    },
+    "screenings": {
+      "collection": "screening"
+    }
+  }
+}
