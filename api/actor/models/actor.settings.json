@@ -29,10 +29,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "movie": {
-      "via": "actors",
-      "model": "movie"
     }
   }
 }

@@ -73,10 +73,6 @@
     "ratings": {
       "collection": "rating"
     },
-    "actors": {
-      "via": "movie",
-      "collection": "actor"
-    },
     "screenings": {
       "collection": "screening"
     }
