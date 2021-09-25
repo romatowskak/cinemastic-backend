@@ -17,6 +17,9 @@
     },
     "auditorium": {
       "model": "auditorium"
+    },
+    "row": {
+      "type": "integer"
     }
   }
 }

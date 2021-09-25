@@ -12,11 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "seats": {
-      "collection": "seat"
-    },
-    "seatNo": {
-      "type": "integer"
+    "seatPlan": {
+      "type": "json"
     }
   }
 }

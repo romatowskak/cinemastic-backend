@@ -12,18 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user": {
-      "plugin": "admin",
-      "model": "user"
-    },
     "screening": {
       "model": "screening"
     },
-    "seat": {
-      "model": "seat"
-    },
     "movie": {
       "model": "movie"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "auditorium": {
+      "model": "auditorium"
+    },
+    "seat": {
+      "type": "string"
     }
   }
 }
